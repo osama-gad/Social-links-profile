@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'newfont';
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #37353E;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* الكارت الرئيسي (الشاشات العادية/الكمبيوتر) */
+.bord {
+    width: 380px;
+    min-height: 516px;
+    background-color: #44444E;
+    border: 2px dashed #52525e;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.name {
+    font-family: 'newfont', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.location {
+    font-family: 'newfont', sans-serif;
+    color: greenyellow;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.bio {
+    font-family: 'newfont', sans-serif;
+    color: #ccc;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* هكيلية اللينكات والزراير */
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.link {
+    color: white;
+    background-color: #2d2c31;
+    border-radius: 8px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'newfont', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.link:hover {
+    background-color: #c5f82a;
+    color: #141414;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    .bord {
+        width: 100%;        
+        max-width: 340px;    
+        padding: 20px 16px; 
+    }
+
+    .photo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .bio {
+        font-size: 13px;
+    }
+
+    .link {
+        height: 42px;
+        font-size: 13px;
+    }
+}
