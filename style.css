@@ -22,7 +22,7 @@
 body {
     background-color: var(--bg-main);
     margin: 0;
-    padding: 1.25rem;
+    padding: clamp(1rem, 3vw, 1.25rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body {
 
 .bord {
     width: 100%;
-    max-width: 23.75rem;
+    max-width: 21.25rem;
     min-height: 32.25rem;
     background-color: var(--bg-card);
     border: 0.125rem dashed var(--border-color);
@@ -106,9 +106,9 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 30em) {
+@media (min-width: 30em) {
     .bord {
-        max-width: 21.25rem;
+        max-width: 23.75rem;
     }
 }
 
